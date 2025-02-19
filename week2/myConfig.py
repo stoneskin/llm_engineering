@@ -41,7 +41,19 @@ class Models:
     QWEN_VLPLUS = 'qwen/qwen-vl-plus:free'
     OPENAI_O3MINI = 'openai/o3-mini'
     OPENAI_4O = 'openai/gpt-4o-2024-11-20'
+    OPENAI_4Omini = 'openai/gpt-4o-mini'
     CLAUDE_HAIKU = 'anthropic/claude-3.5-haiku-20241022'
 
 # Initialize OpenAI client
 openai_client = OpenAIClient(api_key=Config.api_key).client
+
+print("Models.GEMINI2_FLASH_THINK: " + Models.GEMINI2_FLASH_THINK)
+print("Models.GEMINI2_PRO: " + Models.GEMINI2_PRO)
+print("Models.GEMINI2_FLASH_LITE: " + Models.GEMINI2_FLASH_LITE)
+print("Models.META_LLAMA33: " + Models.META_LLAMA33)
+print("Models.DEEPSEEK_V3: " + Models.DEEPSEEK_V3)
+print("Models.DEEPSEEK_R1: " + Models.DEEPSEEK_R1)
+print("Models.QWEN_VLPLUS: " + Models.QWEN_VLPLUS)
+print("Models.OPENAI_O3MINI: " + Models.OPENAI_O3MINI)
+print("Models.OPENAI_4O: " + Models.OPENAI_4O)
+print("Models.CLAUDE_HAIKU: " + Models.CLAUDE_HAIKU)
