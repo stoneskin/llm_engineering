@@ -32,6 +32,7 @@ class OpenAIClient:
 class Models:
     """Class to hold model constants."""
     
+    GEMINI2_FLASH  = 'google/gemini-2.0-flash-001'
     GEMINI2_FLASH_THINK = 'google/gemini-2.0-flash-thinking-exp:free'
     GEMINI2_PRO = 'google/gemini-2.0-pro-exp-02-05:free'
     GEMINI2_FLASH_LITE = 'google/gemini-2.0-flash-lite-preview-02-05:free'
@@ -50,6 +51,7 @@ openai_client = OpenAIClient(api_key=Config.api_key).client
 print("Models.GEMINI2_FLASH_THINK: " + Models.GEMINI2_FLASH_THINK)
 print("Models.GEMINI2_PRO: " + Models.GEMINI2_PRO)
 print("Models.GEMINI2_FLASH_LITE: " + Models.GEMINI2_FLASH_LITE)
+print("Models.GEMINI2_FLASH: " + Models.GEMINI2_FLASH)
 print("Models.META_LLAMA33: " + Models.META_LLAMA33)
 print("Models.DEEPSEEK_V3: " + Models.DEEPSEEK_V3)
 print("Models.DEEPSEEK_R1: " + Models.DEEPSEEK_R1)
